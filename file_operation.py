@@ -1,20 +1,20 @@
 from lib2to3.pgen2.grammar import opmap_raw
 from operator import index
 
-file = open("index.txt","r")
-print(file.read())
+# file = open("index.txt","r")
+# print(file.read())
 #You can return one line by using the readline() method:
 # print(file.readline())
 
 #Return the 5 first characters of the file:
-with open("index.txt") as f:
-    print("5 characters are ",f.read(5))
+# with open("index.txt") as f:
+#     print("5 characters are ",f.read(5))
 
 # Loop through the file line by line:
-print("looping")
-with open("index.txt") as f:
-    for x in f:
-        print(x)
+# print("looping")
+# with open("index.txt") as f:
+#     for x in f:
+#         print(x)
 
 
 #wrting to a file
@@ -33,10 +33,21 @@ with open("index.txt") as f:
 
 
 #append operation
-file_append = open("write.txt" , "a")
-file_append.write(" this is append text")
-file4 = open("write.txt","r")
-print(file4.read())
+# file_append = open("write.txt" , "a")
+# file_append.write(" this is append text")
+# file4 = open("write.txt","r")
+# print(file4.read())
+
+#creating a file
+# created_file = open("newfile.txt","x")
+update_newFile = open("newfile.txt","w")
+update_newFile.write("new file is added to this ")
+
+# with open("newfile.txt") as g:
+#     print(g.read())
+
+readFile = open("newfile.txt","r")
+print(readFile.read())
 
 
 
